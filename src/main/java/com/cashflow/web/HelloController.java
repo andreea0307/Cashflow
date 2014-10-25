@@ -24,7 +24,7 @@ public class HelloController {
 	public String printWelcome(ModelMap model) {
         DateTime d = new DateTime();
         logger.debug("hello");
-		model.addAttribute("message", "Hello world!");
+		model.addAttribute("message", "Buna iubita!");
         JdbcTemplate jdbc = new JdbcTemplate(dataSource);
         jdbc.execute("select * from dual");
 		return "hello";
